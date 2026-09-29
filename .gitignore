@@ -19,3 +19,6 @@ venv/
 # OS
 Thumbs.db
 .DS_Store
+
+# Odoo source code
+odoo/
