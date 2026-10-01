@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- Raw Material List View -->
+    <record id="view_raw_material_list" model="ir.ui.view">
+        <field name="name">batchflow.raw.material.list</field>
+        <field name="model">batchflow.raw.material</field>
+        <field name="arch" type="xml">
+            <list string="Raw Materials">
+                <field name="name"/>
+                <field name="code"/>
+                <field name="category"/>
+                <field name="unit"/>
+                <field name="quantity"/>
+                <field name="cost"/>
+                <field name="active"/>
+            </list>
+        </field>
+    </record>
+
+    <!-- Raw Material Form View -->
+    <record id="view_raw_material_form" model="ir.ui.view">
+        <field name="name">batchflow.raw.material.form</field>
+        <field name="model">batchflow.raw.material</field>
+        <field name="arch" type="xml">
+            <form string="Raw Material">
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        <field name="code"/>
+                        <field name="category"/>
+                        <field name="unit"/>
+                        <field name="quantity"/>
+                        <field name="cost"/>
+                        <field name="active"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!-- Action -->
+    <record id="action_raw_material" model="ir.actions.act_window">
+        <field name="name">Raw Materials</field>
+        <field name="res_model">batchflow.raw.material</field>
+        <field name="view_mode">list,form</field>
+    </record>
+
+        <!-- BatchFlow Main Menu -->
+    <menuitem
+        id="menu_batchflow_root"
+        name="BatchFlow ERP"
+        sequence="10"/>
+
+    <!-- Raw Materials Menu -->
+    <menuitem
+        id="menu_batchflow_raw_material"
+        name="Raw Materials"
+        parent="menu_batchflow_root"
+        action="action_raw_material"
+        sequence="10"/>
+
+</odoo>
