@@ -9,7 +9,7 @@
             <list string="Raw Materials">
                 <field name="name"/>
                 <field name="code"/>
-                <field name="category"/>
+                <field name="category_id"/>
                 <field name="unit"/>
                 <field name="quantity"/>
                 <field name="cost"/>
@@ -28,7 +28,7 @@
                     <group>
                         <field name="name"/>
                         <field name="code"/>
-                        <field name="category"/>
+                        <field name="category_id"/>
                         <field name="unit"/>
                         <field name="quantity"/>
                         <field name="cost"/>

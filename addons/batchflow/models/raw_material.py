@@ -15,9 +15,11 @@ class RawMaterial(models.Model):
         required=True
     )
 
-    category = fields.Char(
-        string='Category'
-    )
+    category_id = fields.Many2one(
+    'batchflow.material.category',
+    string='Category',
+    required=True
+)
 
     unit = fields.Char(
         string='Unit',

@@ -22,7 +22,8 @@
     'license': 'LGPL-3',
     'depends': ['base'],
     'data': [  'security/ir.model.access.csv',
-             'views/raw_material_views.xml',],
+             'views/raw_material_views.xml',
+             'views/material_category_views.xml',],
     'installable': True,
     'application': True,
 }
