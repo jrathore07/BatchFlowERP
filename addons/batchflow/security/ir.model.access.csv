@@ -1,4 +1,3 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-access_batchflow_raw_material,batchflow.raw.material access,model_batchflow_raw_material,,1,1,1,1
-
-access_batchflow_material_category,batchflow.material.category access,model_batchflow_material_category,,1,1,1,1
+access_batchflow_raw_material,batchflow.raw.material access,model_batchflow_raw_material,batchflow.group_batchflow_user,1,1,1,1
+access_batchflow_material_category,batchflow.material.category access,model_batchflow_material_category,batchflow.group_batchflow_user,1,1,1,1

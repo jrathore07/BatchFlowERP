@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="group_batchflow_user" model="res.groups">
+        <field name="name">BatchFlow User</field>
+        <field name="comment">User who can manage BatchFlow ERP records.</field>
+    </record>
+</odoo>
